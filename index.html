@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>The Factory Borderouge – Futuriste & Premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style-v2.css">
+
+  <!-- Scroll smooth -->
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+
+<body>
+
+<!-- LOADER FUTURISTE -->
+<div id="loader">
+  <div class="loader-ring"></div>
+  <p>THE FACTORY</p>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">THE <span>FACTORY</span></div>
+
+  <!-- MENU BURGER -->
+  <div class="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+
+  <nav id="nav-links">
+    <a href="#accueil">Accueil</a>
+    <a href="#menu">Menu</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ACCUEIL -->
+<section class="hero" id="accueil">
+  <div>
+    <h1 class="neon-title">Snack <span>Premium</span> & Cuisine Maison</h1>
+    <p>
+      Plats marocains, burgers, sandwichs, couscous, tajines, boissons détox, thé marocain…  
+      Une adresse incontournable à Borderouge, notée <strong>4,8/5</strong> par ses clients.
+    </p>
+    <a href="#menu"><button class="btn">Voir le menu</button></a>
+  </div>
+</section>
+
+<!-- A PROPOS -->
+<section>
+  <h2 class="neon-title">À propos de <span>nous</span></h2>
+  <p class="section-text">
+    Situé au cœur de Borderouge, The Factory Borderouge propose une cuisine généreuse et conviviale :
+    spécialités marocaines maison, sandwichs, burgers, plats du jour, desserts, boissons détox et thé traditionnel.
+    Service chaleureux, ambiance familiale, prix accessibles : l’endroit idéal pour se retrouver entre amis ou en famille.
+  </p>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <h2 class="neon-title">Notre <span>carte</span></h2>
+  <p class="section-text">
+    La carte complète sera ajoutée dès réception des plats et prix.
+  </p>
+
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3>Spécialités marocaines</h3>
+      <p>Couscous, tajines, plats mijotés maison.</p>
+      <div class="price">Ex : 10–15 €</div>
+    </div>
+    <div class="menu-item">
+      <h3>Burgers & sandwichs</h3>
+      <p>Burgers maison, sandwichs variés, frites.</p>
+      <div class="price">Ex : 8–12 €</div>
+    </div>
+    <div class="menu-item">
+      <h3>Plats du jour</h3>
+      <p>Recettes maison selon l’inspiration du chef.</p>
+      <div class="price">Ex : 10–13 €</div>
+    </div>
+    <div class="menu-item">
+      <h3>Boissons & desserts</h3>
+      <p>Thé marocain, boissons détox, douceurs sucrées.</p>
+      <div class="price">Ex : 3–6 €</div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+<section id="galerie">
+  <h2 class="neon-title">Notre <span>galerie</span></h2>
+
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1606756790138-8f1c1c7a5e4f">
+    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+    <img src="https://images.unsplash.com/photo-1604908177522-0406180a8c6f">
+    <img src="https://images.unsplash.com/photo-1606755962773-0cbbf3c0c4b8">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="neon-title">Nous <span>contacter</span></h2>
+  <p class="section-text">
+    📍 2 Rue Ernest Renan, 31200 Toulouse<br>
+    📞 05 61 21 88 52<br>
+    ⏱️ Ouvert jusqu’à 22h30 – Sur place, à emporter, livraison.
+  </p>
+
+  <h2 class="neon-title"><span>Google</span> Maps</h2>
+  <iframe
+    src="https://www.google.com/maps"
+    width="100%" height="300" style="border:0; border-radius:10px;"
+    allowfullscreen="" loading="lazy">
+  </iframe>
+
+  <h2 class="neon-title"><span>Formulaire</span> de contact</h2>
+  <form>
+    <input type="text" placeholder="Votre nom" required>
+    <input type="email" placeholder="Votre email" required>
+    <textarea rows="5" placeholder="Votre message" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 – The Factory Borderouge. Tous droits réservés.
+</footer>
+
+<!-- SCRIPT MENU BURGER + LOADER -->
+
+<script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("open");
+  }
+
+  window.onload = () => {
+    setTimeout(() => {
+      document.getElementById("loader").style.opacity = "0";
+      setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+      }, 500);
+    }, 1200);
+  };
+</script>
+
+</body>
+</html>
